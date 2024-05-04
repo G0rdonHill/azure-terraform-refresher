@@ -21,6 +21,7 @@ format:
 	terraform fmt -recursive
 
 validate: init
+	terraform get -update
 	terraform validate
 
 # The following will not work when using terraform cloud remote backend
