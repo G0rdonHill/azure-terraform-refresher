@@ -20,7 +20,7 @@ module "az_vm" {
 }
 
 module "az_aks" {
-  source = "git@github.com:G0rdonHill/terraform-modules.git//azure/az_aks?ref=feat/aks"
+  source = "git@github.com:G0rdonHill/terraform-modules.git//azure/az_aks?ref=master"
 
   naming_convention = local.naming_convention
   rg_name             = azurerm_resource_group.rg.name
